@@ -1,0 +1,2 @@
+p12 = Player.create(name:"Juan Toscano Anderson",age:27,height:6.6,weight:209,position:"Small Forward/Shooting Guard",nationality:"USA",appearance:13,assist:2,points:5.3,rebound:4,bio:"",image_url:"https://i1.sndcdn.com/artworks-000562091286-tx6kds-t500x500.jpg",youtube_url:"",salary:350,189,contract_start_date:2019,expiration_date:2022,bonus:0)
+
