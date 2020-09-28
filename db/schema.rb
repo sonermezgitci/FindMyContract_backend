@@ -18,9 +18,13 @@ ActiveRecord::Schema.define(version: 2020_08_29_214255) do
   create_table "contracts", force: :cascade do |t|
     t.bigint "player_id", null: false
     t.bigint "team_id", null: false
+    t.string "player_name"
+    t.string "team_name"
     t.integer "start_date"
     t.integer "expiration_date"
     t.integer "amount"
+    t.integer "salary"
+    t.integer "bonus"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["player_id"], name: "index_contracts_on_player_id"
@@ -38,9 +42,6 @@ ActiveRecord::Schema.define(version: 2020_08_29_214255) do
     t.integer "assist"
     t.integer "age"
     t.string "nationality"
-    t.integer "salary"
-    t.integer "contract_start_date"
-    t.integer "contract_expiration_date"
     t.integer "bonus"
     t.string "image_url"
     t.string "youtube_url"

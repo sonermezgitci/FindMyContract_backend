@@ -11,9 +11,6 @@ class CreatePlayers < ActiveRecord::Migration[6.0]
       t.integer :assist
       t.integer :age
       t.string :nationality
-      t.integer :salary
-      t.integer :contract_start_date
-      t.integer :contract_expiration_date
       t.integer :bonus
       t.string :image_url
       t.string :youtube_url

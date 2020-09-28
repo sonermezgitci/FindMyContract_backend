@@ -1,4 +1,4 @@
 class Player < ApplicationRecord
-    has_many:teams 
-    has_many:contracts, through: :contracts 
+    has_many :teams, through: :contracts 
+    has_many :contracts
 end
