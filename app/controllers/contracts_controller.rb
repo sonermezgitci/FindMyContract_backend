@@ -1,7 +1,10 @@
 class ContractsController < ApplicationController
+ 
+   before_action :set_player
+
     def index 
-       @contracts = Contract.all
-       render json: @contracts
+      @contracts = @player.contracts 
+      render json: @contracts 
     end 
 
 
@@ -12,7 +15,9 @@ class ContractsController < ApplicationController
     
      def create 
         @contract = @player.contracts.new(contract_params)
-         render json: @contracts
+        @contract.save
+        render json: @player
+
     end 
     
    
