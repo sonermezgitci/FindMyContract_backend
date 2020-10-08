@@ -1,4 +1,5 @@
 class ContractSerializer < ActiveModel::Serializer
-  attributes :id, :player_name, :team_name, :start_date, :expiration_date, :amount, :salary, :bonus
-  
+  attributes :id, :player, :team, :start_date, :expiration_date, :amount, :salary, :bonus
+  has_one :player
+  has_one :team
 end

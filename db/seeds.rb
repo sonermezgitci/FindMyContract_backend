@@ -1,8 +1,8 @@
 
 
+Contract.destroy_all
 Player.destroy_all
 Team.destroy_all
-Contract.destroy_all
 
 
 p1 = Player.create(name:"Ky Bowman",age:27,height:6,weight:187,position:"Point Guard",nationality:"USA",appearance:45,assist:2.9,points:7.4,rebound:2.7,bio:"https://en.wikipedia.org/wiki/Ky_Bowman",image_url:"https://www.proballers.com/media/cache/resize_300/ul/player/backup/69469-1-5db458a5a762Sans-titre-1.jpg",youtube_url:"https://youtu.be/RCmqcSOqSSg")
@@ -46,41 +46,41 @@ t2 = Team.create(name:"New York Knicks",arena:"Madison Square Garden",news:"http
 
 
 
-c1 = Contract.create(player_name:"Ky Bowman",team_name:"Golden Satate Warrios",start_date:2019,expiration_date:2022,amount:3650791,salary:1216930,bonus:0,player_id:p1.id,team_id:t1.id)
-c2 = Contract.create(player_name:"Marquese Chriss",team_name:"Golden Satate Warrios",start_date:2019,expiration_date:2021,amount:2478471,salary:1824003,bonus:0,player_id:p2.id,team_id:t1.id)
-c3 = Contract.create(player_name:"Stephen Curry",team_name:"Golden Satate Warrios",start_date:2017,expiration_date:2022,amount:201158790,salary:40231758,bonus:0,player_id:p3.id,team_id:t1.id)
-c4 = Contract.create(player_name:"Draymond Green",team_name:"Golden Satate Warrios",start_date:2020,expiration_date:2025,amount:118000000,salary:17469565,bonus:0,player_id:p4.id,team_id:t1.id)
-c5 = Contract.create(player_name:"Damion Lee",team_name:"Golden Satate Warrios",start_date:2019,expiration_date:2022,amount:4515983,salary:842237,bonus:0,player_id:p5.id,team_id:t1.id)
-c6 = Contract.create(player_name:"Kevon Looney",team_name:"Golden Satate Warrios",start_date:2019,expiration_date:2022,amount:14464287,salary:4464286,bonus:0,player_id:p6.id,team_id:t1.id)
-c7 = Contract.create(player_name:"Mychal Mulder",team_name:"Golden Satate Warrios",start_date:2019,expiration_date:2022,amount:3488384,salary:187782,bonus:0,player_id:p7.id,team_id:t1.id)
-c8 = Contract.create(player_name:"Eric Paschall",team_name:"Golden Satate Warrios",start_date:2019,expiration_date:2023,amount:4198912,salary:1399637,bonus:0,player_id:p8.id,team_id:t1.id)
-c9 = Contract.create(player_name:"Jordan Poole",team_name:"Golden Satate Warrios",start_date:2019,expiration_date:2021,amount:4028040,salary:1964760,bonus:0,player_id:p9.id,team_id:t1.id)
-c10 = Contract.create(player_name:"Alen Smailagic",team_name:"Golden Satate Warrios",start_date:2019,expiration_date:2023,amount:6130000,salary:898310,bonus:0,player_id:p10.id,team_id:t1.id)
-c11 = Contract.create(player_name:"Andrew Wiggins",team_name:"Golden Satate Warrios",start_date:2018,expiration_date:2023,amount:147710050,salary:25467250,bonus:0,player_id:p11.id,team_id:t1.id)
-c12 = Contract.create(player_name:"Juan Toscano Anderson",team_name:"Golden Satate Warrios",start_date:2017,expiration_date:2020,amount:3650791,salary:350189,bonus:0,player_id:p12.id,team_id:t2.id)
+c1 = Contract.create(player:p1,team:t1 ,start_date:2019,expiration_date:2022,amount:3650791,salary:1216930,bonus:0)
+c2 = Contract.create(player:p1,team:t1,start_date:2019,expiration_date:2021,amount:2478471,salary:1824003,bonus:0)
+c3 = Contract.create(player:p1,team:t1,start_date:2017,expiration_date:2022,amount:201158790,salary:40231758,bonus:0)
+c4 = Contract.create(player:p1,team:t1,start_date:2020,expiration_date:2025,amount:118000000,salary:17469565,bonus:0)
+c5 = Contract.create(player:p1,team:t1,start_date:2019,expiration_date:2022,amount:4515983,salary:842237,bonus:0)
+c6 = Contract.create(player:p1,team:t1,start_date:2019,expiration_date:2022,amount:14464287,salary:4464286,bonus:0)
+c7 = Contract.create(player:p1,team:t1,start_date:2019,expiration_date:2022,amount:3488384,salary:187782,bonus:0)
+c8 = Contract.create(player:p1,team:t1,start_date:2019,expiration_date:2023,amount:4198912,salary:1399637,bonus:0)
+c9 = Contract.create(player:p1,team:t1,start_date:2019,expiration_date:2021,amount:4028040,salary:1964760,bonus:0)
+c10 = Contract.create(player:p1,team:t1,start_date:2019,expiration_date:2023,amount:6130000,salary:898310,bonus:0)
+c11 = Contract.create(player:p1,team:t1,start_date:2018,expiration_date:2023,amount:147710050,salary:25467250,bonus:0)
+c12 = Contract.create(player:p1,team:t1,start_date:2017,expiration_date:2020,amount:3650791,salary:350189,bonus:0)
 
 
 
 
 
 
-c13 = Contract.create(player_name:"RJ Barret",team_name:"New York Knicks",start_date:2021,expiration_date:2023,amount:16071720,salary:7839960,bonus:0,player_id:p13.id,team_id:t2.id)
-c14 = Contract.create(player_name:"Marcus Morris Sr.",team_name:"New York Knicks",start_date:2019,expiration_date:2020,amount:1750000,salary:1750000,bonus:0,player_id:p14.id,team_id:t2.id)
-c15 = Contract.create(player_name:"Julius Randle",team_name:"New York Knicks",start_date:2019,expiration_date:2022,amount:62100000,salary:20700000,bonus:0,player_id:p15.id,team_id:t2.id)
-c16 = Contract.create(player_name:"Bobby Portis",team_name:"New York Knicks",start_date:2020,expiration_date:2021,amount:15000000,salary:15000000,bonus:0,player_id:p16.id,team_id:t2.id)
-c17 = Contract.create(player_name:"Elfrid Payton",team_name:"New York Knicks",start_date:2019,expiration_date:2021,amount:16000000,salary:8000000,bonus:0,player_id:p17.id,team_id:t2.id)
-c18 = Contract.create(player_name:"Mitchell Robinson",team_name:"New York Knicks",start_date:2019,expiration_date:2022,amount:4709013,salary:1569671,bonus:0,player_id:p18.id,team_id:t2.id)
-c19 = Contract.create(player_name:"Reggie Bullock",team_name:"New York Knicks",start_date:2019,expiration_date:2021,amount:8200000,salary:4100000,bonus:0,player_id:p19.id,team_id:t2.id)
-c20 = Contract.create(player_name:"Maurice Harkless",team_name:"New York Knicks",start_date:2016,expiration_date:2020,amount:42000000,salary:10500000,bonus:0,player_id:p20.id,team_id:t2.id)
-c21 = Contract.create(player_name:"Damyean Dotson",team_name:"New York Knicks",start_date:2017,expiration_date:2020,amount:4096762,salary:1365587,bonus:0,player_id:p21.id,team_id:t2.id)
-c22 = Contract.create(player_name:"Allonzo Trier",team_name:"New York Knicks",start_date:2019,expiration_date:2020,amount:3551100,salary:3551100,bonus:0,player_id:p22.id,team_id:t2.id)
-c23 = Contract.create(player_name:"Kevin Knox",team_name:"New York Knicks",start_date:2019,expiration_date:2022,amount:12708720,salary:4236240,bonus:0,player_id:p23.id,team_id:t2.id)
-c24 = Contract.create(player_name:"Frank Ntilinka",team_name:"New York Knicks",start_date:2017,expiration_date:2021,amount:18689218,salary:4672305,bonus:0,player_id:p24.id,team_id:t2.id)
-c25 = Contract.create(player_name:"Taj Gibson",team_name:"New York Knicks",start_date:2019,expiration_date:2021,amount:20000000,salary:10000000,bonus:0,player_id:p25.id,team_id:t2.id)
-c26 = Contract.create(player_name:"Dennis Smith JR.",team_name:"New York Knicks",start_date:2017,expiration_date:2021,amount:17188557,salary:4297139,bonus:0,player_id:p26.id,team_id:t2.id)
-c27 = Contract.create(player_name:"Wayne Ellington",team_name:"New York Knicks",start_date:2019,expiration_date:2021,amount:16000000,salary:8000000,bonus:0,player_id:p27.id,team_id:t2.id)
-c28 = Contract.create(player_name:"Kadeem Allen",team_name:"New York Knicks",start_date:2018,expiration_date:2019,amount:1349383,salary:1349383,bonus:0,player_id:p28.id,team_id:t2.id)
-c29 = Contract.create(player_name:"Ignas Brazdeikis",team_name:"New York Knicks",start_date:2020,expiration_date:2022,amount:2416291,salary:1208146,bonus:0,player_id:p29.id,team_id:t2.id)
+# c13 = Contract.create(player_name:"RJ Barret",team_name:"New York Knicks",start_date:2021,expiration_date:2023,amount:16071720,salary:7839960,bonus:0,player_id:p13.id,team_id:t2.id)
+# c14 = Contract.create(player_name:"Marcus Morris Sr.",team_name:"New York Knicks",start_date:2019,expiration_date:2020,amount:1750000,salary:1750000,bonus:0,player_id:p14.id,team_id:t2.id)
+# c15 = Contract.create(player_name:"Julius Randle",team_name:"New York Knicks",start_date:2019,expiration_date:2022,amount:62100000,salary:20700000,bonus:0,player_id:p15.id,team_id:t2.id)
+# c16 = Contract.create(player_name:"Bobby Portis",team_name:"New York Knicks",start_date:2020,expiration_date:2021,amount:15000000,salary:15000000,bonus:0,player_id:p16.id,team_id:t2.id)
+# c17 = Contract.create(player_name:"Elfrid Payton",team_name:"New York Knicks",start_date:2019,expiration_date:2021,amount:16000000,salary:8000000,bonus:0,player_id:p17.id,team_id:t2.id)
+# c18 = Contract.create(player_name:"Mitchell Robinson",team_name:"New York Knicks",start_date:2019,expiration_date:2022,amount:4709013,salary:1569671,bonus:0,player_id:p18.id,team_id:t2.id)
+# c19 = Contract.create(player_name:"Reggie Bullock",team_name:"New York Knicks",start_date:2019,expiration_date:2021,amount:8200000,salary:4100000,bonus:0,player_id:p19.id,team_id:t2.id)
+# c20 = Contract.create(player_name:"Maurice Harkless",team_name:"New York Knicks",start_date:2016,expiration_date:2020,amount:42000000,salary:10500000,bonus:0,player_id:p20.id,team_id:t2.id)
+# c21 = Contract.create(player_name:"Damyean Dotson",team_name:"New York Knicks",start_date:2017,expiration_date:2020,amount:4096762,salary:1365587,bonus:0,player_id:p21.id,team_id:t2.id)
+# c22 = Contract.create(player_name:"Allonzo Trier",team_name:"New York Knicks",start_date:2019,expiration_date:2020,amount:3551100,salary:3551100,bonus:0,player_id:p22.id,team_id:t2.id)
+# c23 = Contract.create(player_name:"Kevin Knox",team_name:"New York Knicks",start_date:2019,expiration_date:2022,amount:12708720,salary:4236240,bonus:0,player_id:p23.id,team_id:t2.id)
+# c24 = Contract.create(player_name:"Frank Ntilinka",team_name:"New York Knicks",start_date:2017,expiration_date:2021,amount:18689218,salary:4672305,bonus:0,player_id:p24.id,team_id:t2.id)
+# c25 = Contract.create(player_name:"Taj Gibson",team_name:"New York Knicks",start_date:2019,expiration_date:2021,amount:20000000,salary:10000000,bonus:0,player_id:p25.id,team_id:t2.id)
+# c26 = Contract.create(player_name:"Dennis Smith JR.",team_name:"New York Knicks",start_date:2017,expiration_date:2021,amount:17188557,salary:4297139,bonus:0,player_id:p26.id,team_id:t2.id)
+# c27 = Contract.create(player_name:"Wayne Ellington",team_name:"New York Knicks",start_date:2019,expiration_date:2021,amount:16000000,salary:8000000,bonus:0,player_id:p27.id,team_id:t2.id)
+# c28 = Contract.create(player_name:"Kadeem Allen",team_name:"New York Knicks",start_date:2018,expiration_date:2019,amount:1349383,salary:1349383,bonus:0,player_id:p28.id,team_id:t2.id)
+# c29 = Contract.create(player_name:"Ignas Brazdeikis",team_name:"New York Knicks",start_date:2020,expiration_date:2022,amount:2416291,salary:1208146,bonus:0,player_id:p29.id,team_id:t2.id)
 
 
 
